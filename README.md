@@ -1,4 +1,7 @@
 # Portable-Button-Control-Timer
+## Description
+We are trying to create a working timer for baking. It will keep track of how much time has passed, and go up to 30 minutes. 
+
 ## Desgin 
 
 
