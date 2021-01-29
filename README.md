@@ -1,6 +1,3 @@
 # Portable-Button-Control-Timer
-## Desgin 
-
-
-## Plan
-https://docs.google.com/document/d/1Kk5wZyEENQwe0-OGovz99GcC6-_3BWwYgUEaeRY9icc/edit
+## Design 
+[link to OnShape design](https://cvilleschools.onshape.com/documents/f0e050e31ed30559f61d16f6/w/8df2d4cb2d1d1daf7c273573/e/c6e4d339d0c5efd6b978cd7a)
