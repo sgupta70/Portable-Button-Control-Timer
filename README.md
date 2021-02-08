@@ -8,3 +8,7 @@ We are trying to create a working timer for baking. It will keep track of how mu
 
 ## Plan
 [Link to google document about planning](https://docs.google.com/document/d/1Kk5wZyEENQwe0-OGovz99GcC6-_3BWwYgUEaeRY9icc/edit)
+
+## Code 
+[Link to code](https://create.arduino.cc/editor/sgupta70/7293c979-0f51-4a7c-8def-8573435dd738)
+
