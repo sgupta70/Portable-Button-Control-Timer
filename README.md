@@ -18,3 +18,6 @@ We are trying to create a working timer for baking. It will keep track of how mu
 ## Week Accomplishments
 So far we have accomplished the rough design/build of our timer and the base of the code. We have gotten more comfortable with building on OnShape,though we still have to edit the specifics, and we have learned more about code. The code is the part we still have to learn the most about.
 We are on track, with only needing to resize specific parts of the build, and make the code more exact on what we want it to do.
+
+
+This week we continued our design on OnShape, we are almost done with the design. We are still fixing a couple of things but the overall design is done. The code is coming along, we are still working on that a little more. We are trying to get the servo to continue to move slower, which has been a little complicated. The project is really coming along, and we have made a lot of progess. 
