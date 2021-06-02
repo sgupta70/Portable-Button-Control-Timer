@@ -1,7 +1,7 @@
 # Portable-Button-Control-Timer
 
 ## Description
-We are trying to create a working timer for baking. It will keep track of how much time has passed, and go up to 30 minutes. 
+For our project we are creating a kitchen timer. You will be able to adjust the time from 0-30 minues. When  
 
 ## Design 
 [link to OnShape design](https://cvilleschools.onshape.com/documents/f0e050e31ed30559f61d16f6/w/8df2d4cb2d1d1daf7c273573/e/957ccaf17a0f9f7b748abea0)
@@ -14,6 +14,16 @@ We are trying to create a working timer for baking. It will keep track of how mu
 
 [Link to code without buttons](https://create.arduino.cc/editor/sgupta70/c86eb22f-7332-4871-b368-3d3b48d6a228)
 
+## List of Materials 
+- Plexi glass 
+- Arduino 
+- Servo 
+- Wires 
+- Potentiometer 
+- Button 
+- LDC Screen 
+- Screws 
+- 9 volt battery (and case) 
 
 ## Week Accomplishments
 
