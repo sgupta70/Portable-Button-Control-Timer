@@ -143,7 +143,7 @@ void loop() {
 - Screws 
 - 9 volt battery (and case) 
 
-# Milestones 
+## Milestones 
 
 ## Week Accomplishments
 
