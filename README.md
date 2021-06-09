@@ -143,7 +143,7 @@ void loop() {
 - Screws 
 - 9 volt battery (and case) 
 
-## Milestones 
+# Milestones 
 
 ## Week Accomplishments
 
@@ -163,3 +163,6 @@ One major obstacle is the code, we both aren't the best at that, so we have been
 Kathryn - When I return to school from Spring break, the first thing I'm going to do is try to get more help with anything I need too, and get as close as we can to start printing and assembling our project. Also continue the code and get some help. 
 
 Sahana - When I return to school from Spring break, the first thing I'm going to do is get a lot of help on the code, and continue to work on it. I understood what we were supposed to do I just am not entirely sure how to type it out, and start it. 
+
+## Problems/Limitations 
+This year we had a lot of difficulties with COVID-19 hitting. We struggled with not being able to see each other, and when we cam back to school we were not on the same day. We didn't get as much time in the lab and the only way we could communicate was through a computer or phone. We were able to work together and overcome these challenges. We really had to get to work when we got back into school, so the first time in the labs we really worked hard to get this project done. While building our timer we also ran into a lot of trouble with the code and the design. When we went back to make some changes for the designs we realized that the way we built it was a little weird, and it took us a while to fix some things. We also added a LCD screen in the middle of the process. With the LCD screen we had to write a whole new code for it, thanks to Mr. Helmstetter who really helped with that. With the little amount of time we had in school, we were able to really work together and communicate with each other to get this project done. 
