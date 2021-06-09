@@ -10,9 +10,127 @@ For our project we are creating a kitchen timer. You will be able to adjust the 
 [Link to google document about planning](https://cvilleschools.onshape.com/documents/f0e050e31ed30559f61d16f6/w/8df2d4cb2d1d1daf7c273573/e/957ccaf17a0f9f7b748abea0)
 
 ## Code 
-[Link to code with buttons](https://create.arduino.cc/editor/sgupta70/e11fd3b4-830f-4da2-9eb3-c528f1435e51)
+```
+// LiquidCrystal I2C - Version: Latest
+#include <LiquidCrystal_I2C.h>
+#include <Servo.h>
+#include <Wire.h>
 
-[Link to code without buttons](https://create.arduino.cc/editor/sgupta70/c86eb22f-7332-4871-b368-3d3b48d6a228)
+LiquidCrystal_I2C lcd(0x3F, 16, 2);
+
+
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
+
+int buttonPin = 3;
+int potPin = 0;
+
+int pos = 0;    // variable to store the servo position
+int oldPos = 180;
+long val = 0;
+long countdown = 0;
+long countdownDelay = 1;
+long timeleft = 0;
+long Min = 0;
+long Sec = 0;
+bool timerSet = true;
+
+void setup() {
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+
+  lcd.init();
+  lcd.backlight();
+  lcd.setCursor(0, 0); // Set the cursor on the third column and first row.
+  lcd.print("  Custom Timer"); // Print the string
+  lcd.setCursor(0, 1);
+  lcd.print("   created by");
+  delay(2500);
+  lcd.setCursor(0, 0); // Set the cursor on the third column and first row.
+  lcd.print("Kathryn Lenert &"); // Print the string
+  lcd.setCursor(0, 1);
+  lcd.print("  Sahana Gupta");
+  delay(2000);
+  lcd.clear();
+}
+
+
+void loop() {
+  while (timerSet) {
+    val = map(analogRead(potPin), 0, 1023, 60, 0); // read the value from the sensor
+    lcd.setCursor(0, 0); // Set the cursor on the third column and first row.
+    lcd.print("Please Set Timer"); // Screen says what it's coded for
+    lcd.setCursor(0, 1);
+    lcd.print(val);
+    lcd.print(" minutes ");
+
+    if (digitalRead(buttonPin) == HIGH) {
+      countdown = val * 60000;
+      countdownDelay = millis();
+      lcd.clear();
+      timerSet = false;
+    }
+
+  }
+
+  // read a potentiometer to set the time
+
+  //countdownDelay = map(countdown, 0, 60, 0, 3600000);
+  //lcd print stuff about timer here
+  timeleft = countdown - (millis() - countdownDelay);
+
+  Min = map(timeleft, 0, 3600000, 0, 60);
+  Sec = timeleft - (Min * 60000);
+  Sec = map(Sec, 0, 60000, 0, 60);
+
+  lcd.setCursor(0, 0); // Set the cursor on the third column and first row.
+  lcd.print(Min); // Print the string
+  lcd.print(" minutes"); // Print the string
+  lcd.setCursor(0, 1); // Set the cursor on the third column and first row.
+  lcd.print(Sec); // Print the string
+  lcd.print(" seconds"); // Print the string
+
+  oldPos = pos;
+
+  pos = map(timeleft, 0, countdown, 180, 0);
+  if (pos != oldPos) {
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+  myservo.write(pos);
+  delay(10);
+  }
+  else{
+      myservo.detach();  // attaches the servo on pin 9 to the servo object
+  }
+  if (timeleft < 1000) {
+    timeleft = 0;
+    for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+      // in steps of 1 degree
+      myservo.write(pos);              // tell servo to go to position in variable 'pos'
+      delay(5);                       // waits 15ms for the servo to reach the position
+    }
+    for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+      myservo.write(pos);              // tell servo to go to position in variable 'pos'
+      delay(5);                       // waits 15ms for the servo to reach the position
+    }
+  }
+
+
+  /*
+    if (millis()-lastTime > countdownDelay){
+
+    lastTime = millis();
+    }
+
+    for (pos = 180; pos >= 0; pos --) { // moves 1 degree from 0 to 180
+    // in steps of 1 degree  // tell servo to go to position in variable 'pos'
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(6000 / 180);                     // waits 166ms for the servo to reach the position
+    }  //9960 for 30 minute timer
+
+    // stop the program for some time
+  */
+}
+```
+
 
 ## List of Materials 
 - Plexi glass 
