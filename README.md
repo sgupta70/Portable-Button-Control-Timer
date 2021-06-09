@@ -143,6 +143,8 @@ void loop() {
 - Screws 
 - 9 volt battery (and case) 
 
+# Milestones 
+
 ## Week Accomplishments
 
 So far we have accomplished the rough design/build of our timer and the base of the code. We have gotten more comfortable with building on OnShape,though we still have to edit the specifics, and we have learned more about code. The code is the part we still have to learn the most about.
