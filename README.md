@@ -6,6 +6,7 @@ For our project we are creating a kitchen timer. You will be able to
 
 ## Design 
 [link to OnShape design](https://cvilleschools.onshape.com/documents/f0e050e31ed30559f61d16f6/w/8df2d4cb2d1d1daf7c273573/e/957ccaf17a0f9f7b748abea0)
+
 For our design we used two acrylic circles as the top and bottom of our timer. Four 3D printed legs hold them together. On the top we have our potentiometer, push button, LCD screen, and servo arm. In between the acylic circles is all the wiring, arduino, and battery, which is slightly hidden to look a little cleaner. 
 
 ## Plan
