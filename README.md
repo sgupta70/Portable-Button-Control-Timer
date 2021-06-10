@@ -6,17 +6,19 @@ For our project we are creating a kitchen timer. You will be able to adjust the 
 ## Plan
 [Link to google document about planning](https://cvilleschools.onshape.com/documents/f0e050e31ed30559f61d16f6/w/8df2d4cb2d1d1daf7c273573/e/957ccaf17a0f9f7b748abea0)
 
-## Design 
-[link to OnShape design](https://cvilleschools.onshape.com/documents/f0e050e31ed30559f61d16f6/w/8df2d4cb2d1d1daf7c273573/e/957ccaf17a0f9f7b748abea0)
-
-For our design we used two acrylic circles as the top and bottom of our timer. Four 3D printed legs hold them together. On the top we have our potentiometer, push button, LCD screen, and servo arm. In between the acylic circles is all the wiring, arduino, and battery, which is slightly hidden to look a little cleaner. 
-
-![Timer](images/timer1.JPG)
-![Timer Top](images/timertop.JPG)
+## List of Materials 
+- Plexi glass 
+- Arduino 
+- Servo 
+- Wires 
+- Potentiometer 
+- Button 
+- LDC Screen 
+- Screws 
+- 9 volt battery (and case) 
 
 ## Wiring 
 ![Wiring](images/wire.jpg)
-
 
 ## Code 
 ```
@@ -140,16 +142,15 @@ void loop() {
 }
 ```
 
-## List of Materials 
-- Plexi glass 
-- Arduino 
-- Servo 
-- Wires 
-- Potentiometer 
-- Button 
-- LDC Screen 
-- Screws 
-- 9 volt battery (and case) 
+## Design 
+[link to OnShape design](https://cvilleschools.onshape.com/documents/f0e050e31ed30559f61d16f6/w/8df2d4cb2d1d1daf7c273573/e/957ccaf17a0f9f7b748abea0)
+
+For our design we used two acrylic circles as the top and bottom of our timer. Four 3D printed legs hold them together. On the top we have our potentiometer, push button, LCD screen, and servo arm. In between the acylic circles is all the wiring, arduino, and battery, which is slightly hidden to look a little cleaner.
+
+## Pictures
+![Timer](images/timer1.JPG)
+![Timer Top](images/timertop.JPG)
+
 
 ## Problems/Limitations 
 This year we had a lot of difficulties with COVID-19 hitting. We struggled with not being able to see each other, and when we cam back to school we were not on the same day. We didn't get as much time in the lab and the only way we could communicate was through a computer or phone. We were able to work together and overcome these challenges. We really had to get to work when we got back into school, so the first time in the labs we really worked hard to get this project done. While building our timer we also ran into a lot of trouble with the code and the design. When we went back to make some changes for the designs we realized that the way we built it was a little weird, and it took us a while to fix some things. We also added a LCD screen in the middle of the process. With the LCD screen we had to write a whole new code for it, thanks to Mr. Helmstetter who really helped with that. With the little amount of time we had in school, we were able to really work together and communicate with each other to get this project done. 
