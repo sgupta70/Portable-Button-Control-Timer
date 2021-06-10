@@ -14,7 +14,7 @@ For our design we used two acrylic circles as the top and bottom of our timer. F
 
 ## Wiring 
 
-<img src="wire.jpg" alt="Final" width="400" height="400">
+<img src="wire.jpg" alt="Wire" width="400" height="400">
 
 ## Code 
 ```
